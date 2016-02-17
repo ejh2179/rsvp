@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Party RSVP</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://www.parsecdn.com/js/parse-1.3.4.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+</head>
+<body>
+	<form>
+		<div class='form-group'>
+			<label for='name'>What is your name?</label>
+			<input id='name' type="text" placeholder='Jane Doe'>
+		</div>
+		<div class='form-group'>
+			<label for='rsvp'>Will you come to the party?</label>
+			  <input type="radio" name="rsvp" value="yes">Yes
+			  <input type="radio" name="rsvp" value="no">No
+		</div>
+		<div class='form-group'>
+			<button id='createRSVP' class='btn btn-success' type='button'>RSVP</button>
+		</div>
+		<div id="notifications"></div>
+	</form>
+	<div class='container' id='responseViewer'>
+		<div class='row'>
+			<div class='col-md-6 col-sm-6' id='yes'>
+				<h3>Yes</h3>
+				<div id="yes-responses">
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6" id='no'>
+				<h3>No</h3>
+				<div id="no-responses">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
